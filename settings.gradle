@@ -1,0 +1,22 @@
+pluginManagement {
+	includeBuild("mc-mods-common/build-logic")
+
+	repositories {
+		maven {
+			name = "Fabric"
+			url = "https://maven.fabricmc.net/"
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+
+includeBuild("mc-mods-common")
+
+dependencyResolutionManagement {
+	versionCatalogs {
+		create("libs") {
+			from(files("./mc-mods-common/gradle/libs.versions.toml"))
+		}
+	}
+}

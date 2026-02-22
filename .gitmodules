@@ -1,0 +1,4 @@
+[submodule "mc-mods-common"]
+	path = mc-mods-common
+	url = https://github.com/roland-a/mc-mods-common.git
+	branch = 1.21.1

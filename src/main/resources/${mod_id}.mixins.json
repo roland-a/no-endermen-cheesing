@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "roland_a.mc_mods.no_endermen_cheesing.mixin",
+	"compatibilityLevel": "JAVA_${java_version}",
+	"plugin": "roland_a.mc_mods.no_endermen_cheesing.Plugin",
+	"mixins": [
+		"EndermanLookForPlayerGoalMixin"
+	],
+	"client": [],
+	"server": [],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
